@@ -1,0 +1,13 @@
+@import "variables";
+
+.nav-custom {
+  height: 12vh;
+  background: $red-orange;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+
+  .link {
+    color: $white !important;
+  }
+}
