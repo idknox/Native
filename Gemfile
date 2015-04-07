@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'font-awesome-rails'
 
 gem 'newrelic_rpm'
+gem 'dotenv-rails'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
