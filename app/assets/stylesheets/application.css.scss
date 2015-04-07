@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "fjord";
@@ -23,9 +22,12 @@
 
 * {
   color: $white;
-  font-family: 'Fjord';
 }
 
 h1, h2, h3, h4 {
-  margin: 0;
 }
+
+a {
+  color: inherit;
+}
+

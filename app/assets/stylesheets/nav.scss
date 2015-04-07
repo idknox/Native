@@ -1,13 +1,14 @@
 @import "variables";
 
 .nav-custom {
-  height: 12vh;
+  height: 10vh;
   background: $red-orange;
   border-radius: 0;
   border: none;
   margin: 0;
 
-  .link {
-    color: $white !important;
+  .menu {
+    margin-top: 10px;
+    text-align: center;
   }
 }
