@@ -45,7 +45,10 @@
 }
 
 .signup {
-  height: 20vh;
+  height: 8vh;
   background: rgba(51, 51, 51, 0.7);
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
