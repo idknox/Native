@@ -20,14 +20,25 @@
 @import "nav";
 @import "splash";
 
-* {
-  color: $white;
-}
-
-h1, h2, h3, h4 {
-}
-
 a {
   color: inherit;
 }
 
+section {
+  color: $black;
+}
+
+.heading {
+  font-family : Futura Std, Futura, Trebuchet MS, Arial, sans-serif;
+  font-size : 36px;
+  line-height : 70.93px;
+  letter-spacing : 0.54px;
+  color : #423535;
+}
+
+.body {
+  font-family : 'Fjord', Georgia, 'Times New Roman', serif;
+  font-size : 20px;
+  line-height : 43.83px;
+  color : #716867;
+}
