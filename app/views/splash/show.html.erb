@@ -36,9 +36,17 @@
 </section>
 <section class="signup">
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-2 info">
-      <h3>Be a Founding Member</h3>
-      <p>Join <%= @signups.length %></p>
+    <div class="col-sm-3 col-sm-offset-2 info">
+      <span class="found">Be a Founding Member</span>
+
+      <p>Join <%= @signups.length %> Native Travellers</p>
+    </div>
+    <%= email_field_tag 'signup-email', nil, class: 'col-sm-3 signup-email' %>
+    <div class="col-sm-2 btn btn-default signup-submit">
+      Submit
+    </div>
+    <div id="signup-close">
+      X
     </div>
   </div>
 </section>
