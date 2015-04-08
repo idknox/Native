@@ -13,6 +13,7 @@ gem 'font-awesome-rails'
 
 gem 'newrelic_rpm'
 gem 'dotenv-rails'
+gem 'gibbon'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
