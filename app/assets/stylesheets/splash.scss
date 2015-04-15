@@ -1,7 +1,8 @@
 @import "variables";
 
 .top {
-  background: #e3e3e3;
+  background: #e3e3e3 image-url('HeroImage_2x_Retina.jpg');
+  background-size: cover;
   height: 70vh;
   color: $white;
 
@@ -34,14 +35,154 @@
 }
 
 .river {
-  background: $black image-url('river.jpg');
-  background-size: contain;
-  padding: 30px 0 370px 0;
+  background: $black image-url('SecondImg_2x_Retina.jpg');
+  background-size: cover;
   width: 100%;
+  padding-bottom: 200px;
 
   h1 {
     font-size: 3.5em;
-    line-height : 100.93px;
+    line-height: 100.93px;
+  }
+}
+
+.team {
+  background: #0E0505;
+
+  .who {
+    text-align: center;
+
+    h1 {
+      color: #F2F4F1;
+    }
+  }
+
+  .images {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .profile-image {
+
+      .hexagon {
+        cursor: pointer;
+        position: relative;
+        width: 150px;
+        height: 86.60px;
+        margin: 43.30px 0;
+        background-image: url(http://csshexagon.com/img/meow.jpg);
+        background-size: auto 161.6581px;
+        background-position: center;
+      }
+
+      .hexTop,
+      .hexBottom {
+        position: absolute;
+        z-index: 1;
+        width: 106.07px;
+        height: 106.07px;
+        overflow: hidden;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background: inherit;
+        left: 16.97px;
+      }
+
+      .hexTop:after,
+      .hexBottom:after {
+        content: "";
+        position: absolute;
+        width: 140.0000px;
+        height: 80.82903768654762px;
+        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+        transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        background: inherit;
+      }
+
+      .hexTop {
+        top: -53.0330px;
+      }
+
+      .hexTop:after {
+        background-position: center top;
+      }
+
+      .hexBottom {
+        bottom: -53.0330px;
+      }
+
+      .hexBottom:after {
+        background-position: center bottom;
+      }
+
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        top: 2.8868px;
+        left: 0;
+        width: 140.0000px;
+        height: 80.8290px;
+        z-index: 2;
+        background: inherit;
+      }
+
+      .red {
+        border-left: solid 5px $border-red;
+        border-right: solid 5px $border-red;
+        background-image: url('http://csshexagon.com/img/meow.jpg');
+
+        .hexTop {
+          border-top: solid 7.0711px $border-red;
+          border-right: solid 7.0711px $border-red;
+        }
+
+        .hexBottom {
+          border-bottom: solid 7.0711px $border-red;
+          border-left: solid 7.0711px $border-red;
+        }
+      }
+
+      .blue {
+        border-left: solid 5px $border-blue;
+        border-right: solid 5px $border-blue;
+        background-image: url('http://csshexagon.com/img/meow.jpg');
+
+        .hexTop {
+          border-top: solid 7.0711px $border-blue;
+          border-right: solid 7.0711px $border-blue;
+        }
+
+        .hexBottom {
+          border-bottom: solid 7.0711px $border-blue;
+          border-left: solid 7.0711px $border-blue;
+        }
+      }
+
+      .brown {
+        border-left: solid 5px $border-brown;
+        border-right: solid 5px $border-brown;
+        background-image: url('http://csshexagon.com/img/meow.jpg');
+
+        .hexTop {
+          border-top: solid 7.0711px $border-brown;
+          border-right: solid 7.0711px $border-brown;
+        }
+
+        .hexBottom {
+          border-bottom: solid 7.0711px $border-brown;
+          border-left: solid 7.0711px $border-brown;
+        }
+      }
+    }
+  }
+
+  h1, p {
+    color: #F2F4F1;
+    width: 100%;
   }
 }
 
@@ -51,14 +192,15 @@
   bottom: 0;
   width: 100%;
   color: $white;
+  z-index: 9999;
 
   .info {
     position: relative;
     top: 5px;
 
-  .found {
-    font-size: 1.5em;
-  }
+    .found {
+      font-size: 1.5em;
+    }
   }
 
   .signup-email {

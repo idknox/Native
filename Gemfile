@@ -10,13 +10,13 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'font-awesome-rails'
+gem 'autoprefixer-rails'
 
 gem 'newrelic_rpm'
 gem 'dotenv-rails'
 gem 'gibbon'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
