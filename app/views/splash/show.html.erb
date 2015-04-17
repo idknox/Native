@@ -168,24 +168,6 @@
     </div>
   </div>
 </section>
-<section class="signup">
-  <div class="row">
-    <div class="col-sm-3 col-sm-offset-2 info">
-      <span class="found">Be a Founding Member</span>
-
-      <p>Join <%= @signups.length %> Native Travellers</p>
-    </div>
-    <%= email_field_tag 'signup-email', nil, class: 'col-sm-3 signup-email' %>
-    <div class="col-sm-2 signup-submit">
-      <div class="left"></div>
-      <div class="mid"><span>Submit</span></div>
-      <div class="right"></div>
-    </div>
-    <div id="signup-close">
-      X
-    </div>
-  </div>
-</section>
 <section class="footer">
   <div class="container-fluid">
     <div class="row">
@@ -211,5 +193,20 @@
       </div>
     </div>
   </div>
+</section>
+<section class="signup">
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-2 info">
+      <span class="found">Be a Founding Member</span>
 
+      <p>Join <%= @signups.length %> Native Travellers</p>
+    </div>
+    <%= email_field_tag 'signup-email', nil, class: 'col-sm-3 signup-email' %>
+    <div class="col-sm-2 signup-submit">
+      <div class="left"></div><div class="mid"><span>Submit</span></div><div class="right"></div>
+    </div>
+    <div id="signup-close">
+      X
+    </div>
+  </div>
 </section>

@@ -205,7 +205,7 @@
 
   .vision {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 
     img {
       width: 100px;
@@ -283,11 +283,12 @@
   }
 
   #signup-close {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 100;
     float: right;
     position: relative;
-    right: 30px;
+    right: 35px;
+    top: 5px;
     cursor: pointer;
   }
 
@@ -301,7 +302,7 @@
 }
 
 .footer {
-  height: 100vh;
+  height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
   background-size: contain;
   color: #fff;
