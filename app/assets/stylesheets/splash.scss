@@ -26,19 +26,51 @@
 }
 
 .river {
-  background: $black image-url('SecondImg_2x_Retina.jpg');
-  background-size: cover;
+  background: #333 image-url('SecondImg_2x_Retina.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 200px;
+  height: 78vh;
+  padding-top: 30px;
 
-  h1 {
-    font-size: 3.5em;
-    line-height: 100.93px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+
+    .who, .friends, .no-one {
+      background: rgba(121, 182, 218, 0.9);
+      color: #fff;
+      padding: 0 0 10px 20px;
+
+      h1 {
+        font-size: 3em;
+      }
+    }
+
+    .no-one {
+      margin-left: 0;
+    }
+  }
+}
+
+.quip {
+  padding: 30px;
+
+  .text {
+    margin: 100px 50px 100px 50px;
+  }
+  .image {
+    background: #333;
+    height: 340px;
   }
 }
 
 .team {
   background: #0E0505;
+  padding: 40px 0 40px 0;
 
   .who {
     text-align: center;
@@ -61,7 +93,7 @@
         height: 86.60px;
         margin: 43.30px 0;
         background-image: url(http://csshexagon.com/img/meow.jpg);
-        background-size: auto 161.6581px;
+        background-size: auto 166.2769px;
         background-position: center;
       }
 
@@ -76,7 +108,7 @@
         -ms-transform: scaleY(0.5774) rotate(-45deg);
         transform: scaleY(0.5774) rotate(-45deg);
         background: inherit;
-        left: 16.97px;
+        left: 18.97px;
       }
 
       .hexTop:after,
@@ -84,10 +116,10 @@
         content: "";
         position: absolute;
         width: 140.0000px;
-        height: 80.82903768654762px;
-        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
-        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
-        transform: rotate(45deg) scaleY(1.7321) translateY(-40.4145px);
+        height: 83.13843876330613px;
+        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
+        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
+        transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
         -webkit-transform-origin: 0 0;
         -ms-transform-origin: 0 0;
         transform-origin: 0 0;
@@ -113,61 +145,70 @@
       .hexagon:after {
         content: "";
         position: absolute;
-        top: 2.8868px;
+        top: 1.7321px;
         left: 0;
-        width: 140.0000px;
-        height: 80.8290px;
+        width: 144.0000px;
+        height: 83.1384px;
         z-index: 2;
         background: inherit;
       }
 
       .red {
-        border-left: solid 5px $border-red;
-        border-right: solid 5px $border-red;
+        border-left: solid 3px $border-red;
+        border-right: solid 3px $border-red;
         background-image: url('http://csshexagon.com/img/meow.jpg');
 
         .hexTop {
-          border-top: solid 7.0711px $border-red;
-          border-right: solid 7.0711px $border-red;
+          border-top: solid 4.2426px $border-red;
+          border-right: solid 4.2426px $border-red;
         }
 
         .hexBottom {
-          border-bottom: solid 7.0711px $border-red;
-          border-left: solid 7.0711px $border-red;
+          border-bottom: solid 4.2426px $border-red;
+          border-left: solid 4.2426px $border-red;
         }
       }
 
       .blue {
-        border-left: solid 5px $border-blue;
-        border-right: solid 5px $border-blue;
+        border-left: solid 3px $border-blue;
+        border-right: solid 3px $border-blue;
         background-image: url('http://csshexagon.com/img/meow.jpg');
 
         .hexTop {
-          border-top: solid 7.0711px $border-blue;
-          border-right: solid 7.0711px $border-blue;
+          border-top: solid 4.2426px $border-blue;
+          border-right: solid 4.2426px $border-blue;
         }
 
         .hexBottom {
-          border-bottom: solid 7.0711px $border-blue;
-          border-left: solid 7.0711px $border-blue;
+          border-bottom: solid 4.2426px $border-blue;
+          border-left: solid 4.2426px $border-blue;
         }
       }
 
       .brown {
-        border-left: solid 5px $border-brown;
-        border-right: solid 5px $border-brown;
+        border-left: solid 3px $border-brown;
+        border-right: solid 3px $border-brown;
         background-image: url('http://csshexagon.com/img/meow.jpg');
 
         .hexTop {
-          border-top: solid 7.0711px $border-brown;
-          border-right: solid 7.0711px $border-brown;
+          border-top: solid 4.2426px $border-brown;
+          border-right: solid 4.2426px $border-brown;
         }
 
         .hexBottom {
-          border-bottom: solid 7.0711px $border-brown;
-          border-left: solid 7.0711px $border-brown;
+          border-bottom: solid 4.2426px $border-brown;
+          border-left: solid 4.2426px $border-brown;
         }
       }
+    }
+  }
+
+  .vision {
+    text-align: center;
+    margin-top: 50px;
+
+    img {
+      width: 100px;
     }
   }
 
@@ -178,7 +219,7 @@
 }
 
 .signup {
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(64, 50, 49, 0.8);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -230,8 +271,8 @@
       bottom: 20px;
 
       span {
-        position:relative;
-        top:5px;
+        position: relative;
+        top: 5px;
       }
     }
 
@@ -256,5 +297,58 @@
     font-weight: 200;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+}
+
+.footer {
+  height: 100vh;
+  background: #333 image-url('FooterImg_2x_Retina.jpg');
+  background-size: contain;
+  color: #fff;
+  padding: 70px;
+
+  .icons {
+    .icon-hex {
+      position: relative;
+      width: 50px;
+      height: 28.87px;
+      background-color: transparent;
+      margin: 14.43px 0;
+      border-left: solid 2px #ffffff;
+      border-right: solid 2px #ffffff;
+      text-align: center;
+    }
+
+    .icon-hex:before,
+    .icon-hex:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 35.36px;
+      height: 35.36px;
+      -webkit-transform: scaleY(0.5774) rotate(-45deg);
+      -ms-transform: scaleY(0.5774) rotate(-45deg);
+      transform: scaleY(0.5774) rotate(-45deg);
+      background-color: inherit;
+      left: 5.3223px;
+    }
+
+    .icon-hex:before {
+      top: -17.6777px;
+      border-top: solid 2.8284px #ffffff;
+      border-right: solid 2.8284px #ffffff;
+    }
+
+    .icon-hex:after {
+      bottom: -17.6777px;
+      border-bottom: solid 2.8284px #ffffff;
+      border-left: solid 2.8284px #ffffff;
+    }
+  }
+  .links {
+
+    div {
+      float: right;
+    }
   }
 }

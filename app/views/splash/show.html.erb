@@ -26,8 +26,38 @@
 <section class="river">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <h1>Who knows you better than your friends and family?<br>No one.</h1>
+      <div class="col-sm-8 col-sm-offset-2 text">
+        <div class="row">
+          <div class="col-sm-10 who">
+            <h1>Who knows you better than your</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 friends">
+            <h1>friends and family?</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-sm-offset-3 no-one">
+            <h1>No one.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="quip">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8 text">
+        <p class="body">
+          By planning with friends who know you the best, and drawing on the insights of people who know the area the
+          best, Nile travelers are confident that
+          they're making the very most of their trip.
+        </p>
+      </div>
+      <div class="col-sm-3 image">
+
       </div>
     </div>
   </div>
@@ -126,6 +156,7 @@
     </div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 vision">
+        <%= image_tag 'NileLogoBlueRedLP_1.svg' %>
         <h1 class="heading">Our Vision</h1>
 
         <p class="body">Nile is a public benefit corporation. We want you to have amazing travels without the hassle of
@@ -146,10 +177,39 @@
     </div>
     <%= email_field_tag 'signup-email', nil, class: 'col-sm-3 signup-email' %>
     <div class="col-sm-2 signup-submit">
-      <div class="left"></div><div class="mid"><span>Submit</span></div><div class="right"></div>
+      <div class="left"></div>
+      <div class="mid"><span>Submit</span></div>
+      <div class="right"></div>
     </div>
     <div id="signup-close">
       X
     </div>
   </div>
+</section>
+<section class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 icons">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="icon-hex"><%= fa_icon 'facebook', class: 'fa-2x' %></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="icon-hex"><%= fa_icon 'twitter', class: 'fa-2x' %></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="icon-hex"><%= fa_icon 'instagram', class: 'fa-2x' %></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="icon-hex"><%= fa_icon 'pinterest', class: 'fa-2x' %></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-4 links">
+        <div class="">Blog</div>
+        <div class="">Manifesto</div>
+      </div>
+    </div>
+  </div>
+
 </section>
