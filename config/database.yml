@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: native-dev
+  database: nile-dev
 
 test:
   <<: *default
-  database: native-test
+  database: nile-test

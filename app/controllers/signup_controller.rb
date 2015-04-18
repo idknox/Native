@@ -4,6 +4,7 @@ class SignupController < ApplicationController
 
     if signup.save
       mailchimp_subscribe(signup)
+      SignupMailer.confirm_signup(signup.email).deliver
       render json: {success: true}
     else
       render json: {error: signup.errors.messages.first}
