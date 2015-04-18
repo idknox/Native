@@ -253,32 +253,13 @@
     border: none;
     color: $white;
     padding: 0;
+    border-radius: 150px;
+    background: $red-orange;
+    text-align: center;
 
-    div {
-      background: $red-orange;
-      height: 100%;
-      display: inline-block;
-    }
-    .left {
-      width: 25%;
-      border-radius: 100% 0 0 100%;
-    }
-
-    .mid {
-      width: 50%;
-      text-align: center;
+    span {
       position: relative;
-      bottom: 20px;
-
-      span {
-        position: relative;
-        top: 5px;
-      }
-    }
-
-    .right {
-      border-radius: 0 100% 100% 0;
-      width: 25%;
+      top: 4px;
     }
   }
 
