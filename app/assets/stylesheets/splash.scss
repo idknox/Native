@@ -72,11 +72,16 @@
   background: #0E0505;
   padding: 40px 0 40px 0;
 
-  .who {
+  .bios {
     text-align: center;
 
-    h1 {
+    h1, h2 {
       color: #F2F4F1;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
     }
   }
 
@@ -95,6 +100,7 @@
         background-image: url(http://csshexagon.com/img/meow.jpg);
         background-size: auto 166.2769px;
         background-position: center;
+
       }
 
       .hexTop,
@@ -209,6 +215,10 @@
 
     img {
       width: 100px;
+    }
+
+    a {
+      text-decoration: underline;
     }
   }
 

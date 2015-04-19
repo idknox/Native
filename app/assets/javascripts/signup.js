@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-  if (localStorage.signedUp) {
-    $('.signup').hide();
+  if (localStorage.getItem('signedUp') === 'true') {
+//    $('.signup').hide();
   }
 
   $('#signup-close').on('click', function () {
@@ -19,7 +19,8 @@ $(document).ready(function () {
 
   function handleResponse(response) {
     if (response.success) {
-      confirmSignup()
+      confirmSignup();
+      localStorage.setItem('signedUp', 'true')
     } else {
       var error = [response.error[0], response.error[1][0]].join(' ')
       console.log(error)
