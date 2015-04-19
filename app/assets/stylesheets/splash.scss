@@ -228,71 +228,6 @@
   }
 }
 
-.signup {
-  background: rgba(64, 50, 49, 0.8);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: $white;
-  z-index: 9999;
-
-  .info {
-    position: relative;
-    top: 5px;
-
-    .found {
-      font-size: 1.5em;
-    }
-  }
-
-  .signup-email {
-    background: transparent;
-    height: 50px;
-    position: relative;
-    top: 5px;
-    left: -70px;
-  }
-
-  .signup-submit {
-    position: relative;
-    top: 5px;
-    left: -60px;
-    height: 50px;
-    font-size: 2em;
-    font-weight: 200;
-    border: none;
-    color: $white;
-    padding: 0;
-    border-radius: 150px;
-    background: $red-orange;
-    text-align: center;
-    cursor: pointer;
-
-    span {
-      position: relative;
-      top: 4px;
-    }
-  }
-
-  #signup-close {
-    font-size: 2.5em;
-    font-weight: 100;
-    float: right;
-    position: relative;
-    right: 35px;
-    top: 5px;
-    cursor: pointer;
-  }
-
-  .signup-confirm {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 200;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-}
-
 .footer {
   height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
@@ -312,5 +247,89 @@
       float: right;
       margin-left: 70px;
     }
+  }
+}
+
+.signup {
+  color: $white;
+
+  .signup-email {
+    background: transparent;
+    height: 45px;
+    width: 100%;
+  }
+
+  .signup-submit {
+    height: 45px;
+    font-size: 2em;
+    font-weight: 200;
+    border: none;
+    color: $white;
+    padding: 0;
+    border-radius: 150px;
+    background: $red-orange;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.unstuck {
+  margin-top: 150px;
+
+  .text {
+    margin-bottom: 10px;
+    opacity: 0;
+    font-size: 1.5em;
+  }
+
+  .signup-email, .signup-submit {
+    display: none;
+  }
+}
+
+.stuck {
+  background: rgba(64, 50, 49, 0.8);
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+
+  .row > div {
+    margin-right: -15px;
+  }
+  .info {
+    position: relative;
+    top: 5px;
+
+    .found {
+      font-size: 1.2em;
+    }
+  }
+
+  .signup-email {
+    position: relative;
+    top: 5px;
+  }
+
+  .signup-submit {
+    position: relative;
+    top: 5px;
+  }
+
+  #signup-close {
+    cursor: pointer;
+    font-size: 2.5em;
+    font-weight: 100;
+    float: right;
+    position: relative;
+    right: 35px;
+  }
+
+  .signup-confirm {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

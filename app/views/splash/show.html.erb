@@ -205,18 +205,31 @@
         <div class="">Manifesto</div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-6 signup unstuck">
+        <div class="row">
+          <div class="col-sm-12 text">Sign Up</div>
+          <div class="col-sm-8">
+            <%= email_field_tag 'signup-email', nil, class: 'signup-email' %>
+          </div>
+          <div class="col-sm-4 signup-submit">Submit</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<section class="signup">
+<section class="signup stuck">
   <div class="row">
-    <div class="col-sm-3 col-sm-offset-2 info">
+    <div class="col-sm-2 col-sm-offset-2 info">
       <span class="found">Be a Founding Member</span>
 
       <p>Join <%= @signups.length %> Native Travellers</p>
     </div>
-    <%= email_field_tag 'signup-email', nil, class: 'col-sm-3 signup-email' %>
-    <div class="col-sm-2 signup-submit">
-      <span>Submit</span>
+    <div class="col-sm-3">
+      <%= email_field_tag 'signup-email', nil, class: 'signup-email' %>
+    </div>
+    <div class="col-sm-2">
+      <div class="signup-submit">Submit</div>
     </div>
     <div id="signup-close">
       X
