@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     $('.stuck').animate({
       left: -335,
-      top: 3373
+      top: 3473
     }, 2000, function () {
       $('.stuck').hide();
       $('.unstuck').find('.signup-email, .signup-submit').show();
