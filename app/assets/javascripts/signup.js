@@ -60,7 +60,7 @@ $(document).ready(function () {
     $('.stuck').find('.info').animate({
       position: 'absolute',
       top: -49,
-      left: 201
+      left: 202
     }, 2000);
 
     $('.stuck').find('#signup-close').animate({

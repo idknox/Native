@@ -111,6 +111,21 @@
     h2 {
       margin-bottom: 20px;
     }
+
+    .info {
+      padding: 0;
+      color: #fff;
+      list-style: none;
+
+
+     .question {
+       text-align: left;
+     }
+
+      .answer {
+        text-align: right;
+      }
+    }
   }
 
   .images {
@@ -122,16 +137,20 @@
         margin-bottom: 20px;
       }
 
+      &:hover, &.selected {
+        position: relative;
+        top: 20px;
+      }
+
       .hexagon {
         cursor: pointer;
         position: relative;
         width: 150px;
         height: 86.60px;
         margin: 43.30px 0;
-        background-image: url(http://csshexagon.com/img/meow.jpg);
+        background-image: url('http://csshexagon.com/img/meow.jpg');
         background-size: auto 166.2769px;
         background-position: center;
-
       }
 
       .hexTop,
@@ -270,7 +289,7 @@
     padding: 40px 20px 20px 20px;
   }
 
-    .icons {
+  .icons {
 
     img {
       width: 100%;

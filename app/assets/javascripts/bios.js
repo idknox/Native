@@ -2,9 +2,12 @@ $(document).ready(function () {
   $('.bio').hide();
   $('#nile').show();
 
-  $('.hexagon').on('click', function () {
-    var name = $(this).parents('.profile-image').data('name');
+  $('.profile-image').on('click', function () {
+    var name = $(this).data('name');
+    $(this).addClass('selected').siblings('.profile-image').removeClass('selected');
     $('.bio').hide();
     $('#' + name).show();
   })
+
+
 });
