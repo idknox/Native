@@ -39,11 +39,15 @@ section {
 }
 
 .body {
-  font-family : 'Fjord', Georgia, 'Times New Roman', serif;
-  font-size : 20px;
-  line-height : 43.83px;
-  color : #716867;
+  font-family: 'Fjord', Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 43.83px;
+  color: #716867;
   text-align: left;
+
+  @media (max-width: $phone) {
+    text-align: justify;
+  }
 }
 
 .field_with_errors {

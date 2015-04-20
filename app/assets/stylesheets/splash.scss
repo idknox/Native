@@ -266,7 +266,11 @@
   color: #fff;
   padding: 70px;
 
-  .icons {
+  @media (max-width: $phone) {
+    padding: 40px 20px 20px 20px;
+  }
+
+    .icons {
 
     img {
       width: 100%;
@@ -314,9 +318,10 @@
 
   @media (max-width: $phone) {
     margin-top: 70px;
+    text-align: center;
 
     .signup-email {
-      margin: 10px 0 20px 0;
+      margin: 10px 0 10px 0;
     }
   }
 
