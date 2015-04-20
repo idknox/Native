@@ -38,19 +38,15 @@ $(document).ready(function () {
 
     $('.stuck').css({
       position: 'absolute',
-      top: $(window).scrollTop() + $(window).height() - $('.stuck').height(),
+      top: $(window).scrollTop() + $(window).height() - $('.stuck').height()
     });
 
     $('.stuck').animate({
       left: -335,
-      top: 3470
+      top: 3485
     }, 2000, function () {
       $('.stuck').hide();
-      $('.unstuck').find('.signup-email, .signup-submit').show();
-
-      $('.unstuck').find('.text').animate({
-        opacity: 100
-      }, 2000);
+      $('.unstuck').find('.signup-email, .signup-submit, .info').show();
     });
 
     $('.stuck').find('.signup-email').animate({
@@ -61,7 +57,13 @@ $(document).ready(function () {
       left: 53
     }, 2000);
 
-    $('.stuck').find('#signup-close, .info').animate({
+    $('.stuck').find('.info').animate({
+      position: 'absolute',
+      top: -49,
+      left: 201
+    }, 2000);
+
+    $('.stuck').find('#signup-close').animate({
       opacity: 0
     }, 2000);
   }
@@ -70,7 +72,7 @@ $(document).ready(function () {
     var trigger = $('.footer').offset().top + 200;
     var bottom = $(window).scrollTop() + $(window).height();
 
-    if (bottom > trigger) {
+    if (bottom > trigger && $(window).width() > 378) {
       animateSignup();
       $(window).off('scroll');
     }

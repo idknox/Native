@@ -6,10 +6,18 @@
   height: 90vh;
   color: $white;
 
+  @media (max-width: $phone) {
+    height: 60vh;
+  }
+
   .title {
     margin-top: 8%;
     background: rgba(51, 51, 51, 0.3);
     padding: 30px;
+
+    @media (max-width: $phone) {
+      margin-top: 20%;
+    }
   }
 }
 
@@ -18,6 +26,10 @@
 
   img {
     width: 100%;
+
+    @media (max-width: $phone) {
+      display: none;
+    }
   }
 
   .intro-container {
@@ -27,11 +39,15 @@
 
 .river {
   background: #333 image-url('SecondImg_2x_Retina.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 79vh;
   padding-top: 30px;
+
+  @media (max-width: $phone) {
+    height: 50vh;
+  }
 
   img {
     width: 100%;
@@ -47,6 +63,10 @@
 
       h1 {
         font-size: 3em;
+
+        @media (max-width: $phone) {
+          margin: 0;
+        }
       }
     }
 
@@ -61,10 +81,18 @@
 
   .text {
     margin: 100px 50px 100px 50px;
+
+    @media (max-width: $phone) {
+      margin: auto;
+    }
   }
   .image {
     background: #333;
     height: 420px;
+
+    @media (max-width: $phone) {
+      display: none;
+    }
   }
 }
 
@@ -90,6 +118,9 @@
     margin-bottom: 30px;
 
     .profile-image {
+      @media (max-width: $phone) {
+        margin-bottom: 20px;
+      }
 
       .hexagon {
         cursor: pointer;
@@ -231,7 +262,7 @@
 .footer {
   height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
-  background-size: contain;
+  background-size: cover;
   color: #fff;
   padding: 70px;
 
@@ -244,8 +275,13 @@
   .links {
 
     div {
-      float: right;
-      margin-left: 70px;
+      text-align: right;
+
+      @media (max-width: $phone) {
+        text-align: center;
+        margin-top: 50px;
+      }
+
     }
   }
 }
@@ -276,14 +312,24 @@
 .unstuck {
   margin-top: 150px;
 
-  .text {
-    margin-bottom: 10px;
-    opacity: 0;
-    font-size: 1.5em;
+  @media (max-width: $phone) {
+    margin-top: 70px;
+
+    .signup-email {
+      margin: 10px 0 20px 0;
+    }
   }
 
-  .signup-email, .signup-submit {
+  .signup-email, .signup-submit, .info {
     display: none;
+
+    @media (max-width: $phone) {
+      display: inline-block;
+    }
+  }
+
+  .found {
+    font-size: 1.2em;
   }
 }
 
@@ -294,6 +340,9 @@
   z-index: 9999;
   width: 100%;
 
+  @media (max-width: $phone) {
+    display: none;
+  }
   .row > div {
     margin-right: -15px;
   }
