@@ -29,6 +29,7 @@ $(document).ready(function () {
 
   $('.signup-submit').on('click', function () {
     var email = $('.signup-email').val();
+    console.log(email)
 
     $.post('/signup', {email: email}, handleResponse)
   });
