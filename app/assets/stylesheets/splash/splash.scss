@@ -114,6 +114,10 @@
   padding: 40px 0 40px 0;
   color: #fff;
 
+  @media (max-width: $phone) {
+    padding: 30px;
+  }
+
   .images {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -276,10 +280,6 @@
     .bio {
       display: none;
 
-      @media (max-width: $phone) {
-        padding: 30px;
-      }
-
       .info {
         padding: 0;
         color: #fff;
@@ -289,13 +289,10 @@
   }
 
   .vision {
-    text-align: center;
     margin-top: 40px;
 
     p {
-      @media (max-width: $phone) {
-        padding: 30px;
-      }
+
     }
 
     img {
