@@ -191,24 +191,24 @@
       </div>
       <div class="col-xs-12 col-sm-3 col-sm-offset-5 links menu-item">
         <div class="row">
-          <div class="col-xs-6 col-sm-3">BLOG</div>
-          <div class="col-xs-6 col-sm-6 col-sm-offset-2">MANIFESTO</div>
+          <div class="col-xs-6 col-sm-3"><%= link_to 'BLOG', 'https://ello.co/niletravel' %></div>
+          <div class="col-xs-6 col-sm-6 col-sm-offset-2"><%= link_to 'MANIFESTO', manifesto_path %></div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6 signup unstuck">
-        <!--<div class="row">-->
-        <!--<div class="col-xs-12 col-sm-12 info">-->
-        <!--<span class="found">Be a Founding Member</span>-->
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 info">
+        <span class="found">Be a Founding Member</span>
 
-        <!--<p>Join <%= @signups.length %> Native Travellers</p>-->
-        <!--</div>-->
-        <!--<div class="col-xs-12 col-sm-8">-->
-        <!--<%= email_field_tag 'signup-email', nil, class: 'signup-email' %>-->
-        <!--</div>-->
-        <!--<div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>-->
-        <!--</div>-->
+        <p>Join <%= @signups.length %> Native Travellers</p>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+        <%= email_field_tag 'signup-email', nil, class: 'signup-email' %>
+        </div>
+        <div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>
+        </div>
       </div>
     </div>
   </div>

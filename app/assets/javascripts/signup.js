@@ -2,6 +2,7 @@ $(document).ready(function () {
 
   if (localStorage.getItem('signedUp') === 'true') {
 //    $('.signup').hide();
+//    $('.invite').show();
   }
 
   $('#signup-close').on('click', function () {
@@ -29,8 +30,6 @@ $(document).ready(function () {
 
   $('.signup-submit').on('click', function () {
     var email = $('.signup-email').val();
-    console.log(email)
-
     $.post('/signup', {email: email}, handleResponse)
   });
 
@@ -43,7 +42,7 @@ $(document).ready(function () {
 //    });
 
     $('.stuck').animate({
-      opactiy: 0
+      opacity: 0
     }, 2000, function () {
 //      $('.stuck').hide();
 //      $('.unstuck').find('.signup-email, .signup-submit, .info').show();
@@ -69,13 +68,17 @@ $(document).ready(function () {
   }
 
   $(window).on('scroll', function () {
-    var trigger = $('.footer').offset().top;
-    var bottom = $(window).scrollTop() + $(window).height();
+    var trigger = $('.team').offset().top;
 
-    if (bottom > trigger && $(window).width() > 378) {
+    if ($(window).scrollTop() > trigger && $(window).width() > 378) {
       animateSignup();
-      console.log('hi')
       $(window).off('scroll');
     }
+  });
+
+  $('#nav-signup').on('click', function () {
+    $('html,body').animate({
+      scrollTop: $('.footer').offset().top
+    }, 500);
   })
 });

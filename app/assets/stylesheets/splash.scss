@@ -312,7 +312,7 @@
   }
 }
 
-// STICKY SIGNUP
+// -- SIGNUP --
 
 .signup {
   color: $white;
@@ -350,11 +350,7 @@
   }
 
   .signup-email, .signup-submit, .info {
-    display: none;
-
-    @media (max-width: $phone) {
-      display: inline-block;
-    }
+//    display: none;
   }
 
   .found {
