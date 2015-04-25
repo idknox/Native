@@ -1,23 +1,17 @@
 $(document).ready(function () {
-  $('.bio').hide();
-  $('#nile').show();
+//  $('.bio').hide();
+//  $('#nile').show();
 
-  var clicked;
-
-  $('.profile-image').on('click', function () {
-    clicked = true
-  });
-
-  $('.profile-image').on('click mouseenter', function () {
+  $('.profile-image').on('mouseenter', function () {
     var name = $(this).data('name');
-    $(this).addClass('selected').siblings('.profile-image').removeClass('selected');
+    $(this).addClass('active');
+    $(this).siblings().find('.hexagon').removeClass('active');
     $('.bio').hide();
     $('#' + name).show();
   }).on('mouseleave', function () {
-    if (!clicked) {
-      var name = $(this).data('name');
-      $('#' + name).hide();
-      $('#nile').show();
-    }
+    var name = $(this).data('name');
+    $('#' + name).hide();
+    $('#nile').show();
+    $(this).removeClass('active')
   })
 });

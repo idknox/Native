@@ -256,6 +256,24 @@
         }
       }
     }
+
+    .active {
+
+      .hexagon {
+        border-left: solid 3px #fff;
+        border-right: solid 3px #fff;
+
+        .hexTop {
+          border-top: solid 4.2426px #fff;
+          border-right: solid 4.2426px #fff;
+        }
+
+        .hexBottom {
+          border-bottom: solid 4.2426px #fff;
+          border-left: solid 4.2426px #fff;
+        }
+      }
+    }
   }
 
   .vision {
