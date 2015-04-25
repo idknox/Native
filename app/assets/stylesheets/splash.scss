@@ -1,5 +1,7 @@
 @import "variables";
 
+// -- HERO --
+
 .top {
   background: #e3e3e3 image-url('HeroImage_2x_Retina.jpg');
   background-size: cover;
@@ -21,6 +23,8 @@
   }
 }
 
+// -- INTRO/PHONE --
+
 .intro {
   padding: 30px 20px 50px 20px;
 
@@ -36,6 +40,8 @@
     margin-top: 30px;
   }
 }
+
+// -- RIVER --
 
 .river {
   background: #333 image-url('SecondImg_2x_Retina.jpg');
@@ -76,6 +82,8 @@
   }
 }
 
+// -- QUIP --
+
 .quip {
   padding: 30px;
 
@@ -97,35 +105,29 @@
   }
 }
 
+// -- TEAM --
+
 .team {
   background: #0E0505;
   padding: 40px 0 40px 0;
+  color: #fff;
 
   .bios {
-    text-align: center;
 
     h1, h2 {
-      color: #F2F4F1;
       margin: 0;
     }
 
     h2 {
       margin-bottom: 20px;
+      color: #fff;
+      font-family: 'Futura Heavy';
     }
 
     .info {
       padding: 0;
       color: #fff;
       list-style: none;
-
-
-     .question {
-       text-align: left;
-     }
-
-      .answer {
-        text-align: right;
-      }
     }
   }
 
@@ -138,18 +140,11 @@
         margin-bottom: 20px;
       }
 
-      &:hover, &.selected {
-        position: relative;
-        top: 20px;
-      }
-
       .hexagon {
-        cursor: pointer;
         position: relative;
         width: 150px;
         height: 86.60px;
         margin: 43.30px 0;
-        background-image: url('http://csshexagon.com/img/meow.jpg');
         background-size: auto 166.2769px;
         background-position: center;
       }
@@ -168,11 +163,12 @@
         left: 18.97px;
       }
 
+      /*counter transform the bg image on the caps*/
       .hexTop:after,
       .hexBottom:after {
         content: "";
         position: absolute;
-        width: 140.0000px;
+        width: 144.0000px;
         height: 83.13843876330613px;
         -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
         -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
@@ -185,6 +181,8 @@
 
       .hexTop {
         top: -53.0330px;
+        border-top: solid 4.2426px #333333;
+        border-right: solid 4.2426px #333333;
       }
 
       .hexTop:after {
@@ -193,6 +191,8 @@
 
       .hexBottom {
         bottom: -53.0330px;
+        border-bottom: solid 4.2426px #333333;
+        border-left: solid 4.2426px #333333;
       }
 
       .hexBottom:after {
@@ -213,7 +213,9 @@
       .red {
         border-left: solid 3px $border-red;
         border-right: solid 3px $border-red;
-        background-image: url('http://csshexagon.com/img/meow.jpg');
+
+        &:nth-child(2) {
+        }
 
         .hexTop {
           border-top: solid 4.2426px $border-red;
@@ -229,7 +231,6 @@
       .blue {
         border-left: solid 3px $border-blue;
         border-right: solid 3px $border-blue;
-        background-image: url('http://csshexagon.com/img/meow.jpg');
 
         .hexTop {
           border-top: solid 4.2426px $border-blue;
@@ -245,7 +246,6 @@
       .brown {
         border-left: solid 3px $border-brown;
         border-right: solid 3px $border-brown;
-        background-image: url('http://csshexagon.com/img/meow.jpg');
 
         .hexTop {
           border-top: solid 4.2426px $border-brown;
@@ -279,12 +279,14 @@
   }
 }
 
+// -- FOOTER --
+
 .footer {
   height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
   background-size: cover;
   color: #fff;
-  padding: 70px;
+  padding: 50px;
 
   @media (max-width: $phone) {
     padding: 40px 20px 20px 20px;
@@ -309,6 +311,8 @@
     }
   }
 }
+
+// STICKY SIGNUP
 
 .signup {
   color: $white;
@@ -392,11 +396,14 @@
 
   #signup-close {
     cursor: pointer;
-    font-size: 2.5em;
-    font-weight: 100;
-    float: right;
-    position: relative;
-    right: 35px;
+    text-align: right;
+
+    img {
+      width: 40px;
+      position: relative;
+      left: 35px;
+      top: 7px;
+    }
   }
 
   .signup-confirm {

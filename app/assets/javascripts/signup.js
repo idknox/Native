@@ -37,44 +37,44 @@ $(document).ready(function () {
 
   function animateSignup() {
 
-    $('.stuck').css({
-      position: 'absolute',
-      top: $(window).scrollTop() + $(window).height() - $('.stuck').height()
-    });
+//    $('.stuck').css({
+//      position: 'absolute',
+//      top: $(window).scrollTop() + $(window).height() - $('.stuck').height()
+//    });
 
     $('.stuck').animate({
-      left: -335,
-      top: 3485
+      opactiy: 0
     }, 2000, function () {
-      $('.stuck').hide();
-      $('.unstuck').find('.signup-email, .signup-submit, .info').show();
+//      $('.stuck').hide();
+//      $('.unstuck').find('.signup-email, .signup-submit, .info').show();
     });
 
-    $('.stuck').find('.signup-email').animate({
-      width: 350
-    }, 2000);
-
-    $('.stuck').find('.signup-submit').animate({
-      left: 53
-    }, 2000);
-
-    $('.stuck').find('.info').animate({
-      position: 'absolute',
-      top: -49,
-      left: 202
-    }, 2000);
-
-    $('.stuck').find('#signup-close').animate({
-      opacity: 0
-    }, 2000);
+//    $('.stuck').find('.signup-email').animate({
+//      width: 350
+//    }, 2000);
+//
+//    $('.stuck').find('.signup-submit').animate({
+//      left: 53
+//    }, 2000);
+//
+//    $('.stuck').find('.info').animate({
+//      position: 'absolute',
+//      top: -49,
+//      left: 202
+//    }, 2000);
+//
+//    $('.stuck').find('#signup-close').animate({
+//      opacity: 0
+//    }, 2000);
   }
 
   $(window).on('scroll', function () {
-    var trigger = $('.footer').offset().top + 200;
+    var trigger = $('.footer').offset().top;
     var bottom = $(window).scrollTop() + $(window).height();
 
     if (bottom > trigger && $(window).width() > 378) {
       animateSignup();
+      console.log('hi')
       $(window).off('scroll');
     }
   })

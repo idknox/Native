@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3 title">
-        <%= image_tag 'HeroTypeLP_1.svg' %>
+        <%= image_tag 'NileHeroType.svg' %>
       </div>
     </div>
   </div>
@@ -10,10 +10,10 @@
 <section class="intro">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2 phone">
+      <div class="col-sm-3 phone">
         <%= image_tag 'phone.png' %>
       </div>
-      <div class="col-xs-12 col-sm-7 col-sm-offset-1 intro-container">
+      <div class="col-xs-12 col-sm-7 intro-container">
         <h1 class="heading">Local Knowledge. Authentic Adventures.</h1>
 
         <p class="body">
@@ -60,226 +60,115 @@
         </p>
       </div>
       <!--<div class="col-xs-12 col-sm-3 image">-->
-      </div>
     </div>
+  </div>
   </div>
 </section>
 <section class="team">
-<div class="container-fluid">
-<div class="row">
-  <div class=" col-xs-12 col-sm-4 col-sm-offset-4 who">
-    <h1 class="heading">Who Is Nile?</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2 images">
+  <div class="container-fluid">
     <div class="row">
-      <div class=" col-xs-6 col-sm-3 profile-image" data-name="scott">
-        <div class="hexagon red">
-          <div class="hexTop"></div>
-          <div class="hexBottom"></div>
+      <div class=" col-xs-12 col-sm-4 col-sm-offset-4 who">
+        <h1 class="heading centered">Who Is Nile?</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 images">
+        <div class="row">
+          <div class=" col-xs-6 col-sm-3 profile-image" data-name="scott">
+            <div class="hexagon red" style="background-image: url(<%= asset_path 'scott.jpg' %>)">
+             <!--<%= image_tag 'scotthex.png' %>-->
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 profile-image" data-name="derek">
+            <div class="hexagon blue" style="background-image: url(<%= asset_path 'derek.jpg' %>)">
+             <!--<%= image_tag 'derekhex.png' %>-->
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 profile-image" data-name="ian">
+            <div class="hexagon brown" style="background-image: url(<%= asset_path 'ian.jpg' %>)">
+             <!--<%= image_tag 'ianhex.png' %>-->
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 profile-image" data-name="tristram">
+            <div class="hexagon red" style="background-image: url(<%= asset_path 'tristram.jpg' %>)">
+             <!--<%= image_tag 'tramhex.png' %>-->
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-xs-6 col-sm-3 profile-image" data-name="derek">
-        <div class="hexagon blue">
-          <div class="hexTop"></div>
-          <div class="hexBottom"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 bios body">
+        <div class="bio" id="nile">
+          <p class="col-xs-12 body">
+            Nile, headquartered in the burgeoning tech market of Denver, Colorado, is the collaborative effort of
+            Founders Derek Cann and Scott Brabson, UX/UI Designer Tristram Nelson, and Developer Ian Knox.
+          </p>
+        </div>
+        <div class="bio" id="scott">
+          <h1 class="heading">Scott Brabson</h1>
+
+          <h2>Co-Founder</h2>
+          <ul class="col-xs-12 info">
+            <li>Best Trip Ever: Cuba</li>
+            <li>Top of the Bucket List: Mongolia</li>
+            <li>Travel Mantra: "You're not in Kansas anymore, Dorothy. Remember, that's a good thing."</li>
+          </ul>
+        </div>
+        <div class="bio" id="derek">
+          <h1 class="heading">Derek Cann</h1>
+
+          <h2>Founder & President</h2>
+          <ul class="col-xs-12 info">
+            <li>Best Trip Ever: Barcelona</li>
+            <li>Top of the Bucket List: Machu Picchu</li>
+            <li>Travel Mantra: “Stay curious, be open minded, and tread lightly.”</li>
+          </ul>
+        </div>
+        <div class="bio" id="ian">
+          <h1 class="heading">Ian Knox</h1>
+
+          <h2>Director of Engineering</h2>
+          <ul class="col-xs-12 info">
+            <li>Best Trip Ever: Palestine</li>
+            <li>Top of the Bucket List: Berlin & Prague</li>
+            <li>Travel Mantra: "Don't be afraid to try what scares away most tourists."</li>
+          </ul>
+        </div>
+        <div class="bio" id="tristram">
+          <h1 class="heading">Tristram Nelson</h1>
+
+          <h2>Director of User Experience/Design</h2>
+
+          <ul class="col-xs-12 info">
+            <li>Best Trip Ever: Gothenburg</li>
+            <li>Top of the Bucket List: Tokyo</li>
+            <li>Travel Mantra: "I go wherever the ladyboys are."</li>
+          </ul>
         </div>
       </div>
-      <div class="col-xs-6 col-sm-3 profile-image" data-name="ian">
-        <div class="hexagon brown">
-          <div class="hexTop"></div>
-          <div class="hexBottom"></div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-3 profile-image" data-name="tristram">
-        <div class="hexagon red">
-          <div class="hexTop"></div>
-          <div class="hexBottom"></div>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 vision">
+        <%= image_tag 'NileLogoBlueRedLP_1.svg' %>
+        <h1 class="heading">Our Vision</h1>
+
+        <p class="body">Nile is a public benefit corporation. We want you to have amazing travels without the hassle of
+          having to
+          weed through deceptive reviews or a mess of suggestions. We don't believe in selling user data. We do believe
+          we should be low impace campers leaving the world (and web) a better place than we found
+          it. <%= link_to 'Read our manifesto>>', '#' %></p>
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-sm-8 col-sm-offset-2 bios">
-    <div class="bio" id="nile">
-      <p class="col-xs-12 body">Nile, headquartered in the burgeoning tech market of Denver, Colorado, is the
-        collaborative
-        effort of
-        Founders Derek Cann and Scott Brabson, UX/UI Designer Tristram Nelson, and Developer Ian Knox.
-      </p>
-    </div>
-    <div class="bio" id="scott">
-      <h1 class="heading">Scott Brabson</h1>
-
-      <h2>Co-Founder</h2>
-
-      <!--<div>-->
-      <!--<ul class="body info">-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Best Trip Ever:-->
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Cuba-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Top of the Bucket List:-->
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Fiji-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-5 question">-->
-      <!--Advice for Travelers:-->
-      <!--</div>-->
-      <!--<div class="col-xs-7 answer">-->
-      <!--"You're not in Kansas anymore, Dorothy. Remember, that's a good thing."-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--</ul>-->
-      <!--</div>-->
-      <p class="col-xs-12 body">
-        Having already dipped his toes in small business with the successful launch of Forest & Filament, a profitable
-        handmade furniture company, Scott leads the mobile product marketing efforts at Photobucket. Deriving actionable
-        insights into the user journey and experience through testing and iterating, Scott’s user-centric approach has
-        yielded record engagement and mobile revenue numbers. Scott brings his passion for functional innovation and
-        intuitive user experience to Nile.
-      </p>
-    </div>
-    <div class="bio" id="derek">
-      <h1 class="heading">Derek Cann</h1>
-
-      <h2>Founder & President</h2>
-
-      <!--<div>-->
-      <!--<ul class="body info">-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Best Trip Ever:-->
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Barcelona-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Top of the Bucket List:-->
-
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Machu Picchu-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-5 question">-->
-      <!--Advice for Travelers:-->
-      <!--</div>-->
-      <!--<div class="col-xs-7 answer">-->
-      <!--"Stay curious, be open-minded, and tread lightly."-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--</ul>-->
-      <!--</div>-->
-      <p class="col-xs-12 body">
-        Derek brings over ten years of organizational, people and product management experience to the Nile
-        management team. As the Marketing Manager at Photobucket, Derek led a team which brought three mobile apps
-        and two website products to market posting record growth and revenue figures. Derek previously founded Beat
-        of Travel (.com), a travel and lifestyle website which partnered with travel industry leaders including
-        Virgin Vacations and Key West Express. An alumni of the University of Colorado Denver School of Business,
-        Derek earned a Masters of Marketing with specializations in Internet Marketing and Brand Management in
-        Spring of 2014.
-      </p>
-    </div>
-    <div class="bio" id="ian">
-      <h1 class="heading">Ian Knox</h1>
-
-      <h2>Director of Engineering</h2>
-
-      <!--<div>-->
-      <!--<ul class="body info">-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Best Trip Ever:-->
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Palestine-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-6 question">-->
-      <!--Top of the Bucket List:-->
-      <!--</div>-->
-      <!--<div class="col-xs-6 answer">-->
-      <!--Berlin-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</li>-->
-      <!--<li>-->
-      <!--<div class="row">-->
-      <!--<div class="col-xs-4 question">-->
-      <!--Advice for Travelers:-->
-      <!--</div>-->
-      <!--<div class="col-xs-8 answer">-->
-      <!--"Don't be afraid to try what scares away most tourists."-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</ul>-->
-      <!--</div>-->
-      <p class="col-xs-12 body">
-        Ian brings a diverse skill set to Nile, his fields of study include History, Computer Science, Applied
-        Mathematics, and Civil Engineering. A graduate of Galvanize's gSchool in Denver, Ian is a technical polyglot
-        and developer generalist. Integrating useful and relevant technologies across both web a
-        nd mobile platforms are his meat and potatoes.
-      </p>
-    </div>
-    <div class="bio" id="tristram">
-      <h1 class="heading">Tristram Nelson</h1>
-
-      <h2>Director of User Experience/Design</h2>
-
-      <p class="col-xs-12 body">
-        As a Senior UX/UI designer at Photobucket, Tristram led the design of the new Photobucket Print Shop product
-        which exceeded print revenue goals (+30K) first month after launch. A content consultant for over five years
-        for Intrepid Travel, he created advertising and promotions for global distribution, and created UX and UI
-        design for both TravelStore and Southwind Travels. Tristram is an Alumni of RMCAD with a Bachelors of Fine
-        Arts in Communications Design.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12 col-sm-8 col-sm-offset-2 vision">
-    <%= image_tag 'NileLogoBlueRedLP_1.svg' %>
-    <h1 class="heading">Our Vision</h1>
-
-    <p class="body">Nile is a public benefit corporation. We want you to have amazing travels without the hassle of
-      having to
-      weed through deceptive reviews or a mess of suggestions. We don't believe in selling user data. We do believe
-      we should be low impace campers leaving the world (and web) a better place than we found
-      it. <%= link_to 'Read our manifesto>>', '#' %></p>
-  </div>
-</div>
-</div>
 </section>
 <section class="footer">
   <div class="container-fluid">
@@ -300,25 +189,25 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-2 col-sm-offset-6 links">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-5 links menu-item">
         <div class="row">
-          <div class="col-xs-6 col-sm-3">Blog</div>
-          <div class="col-xs-6 col-sm-7 col-sm-offset-2">Manifesto</div>
+          <div class="col-xs-6 col-sm-3">BLOG</div>
+          <div class="col-xs-6 col-sm-6 col-sm-offset-2">MANIFESTO</div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6 signup unstuck">
         <!--<div class="row">-->
-          <!--<div class="col-xs-12 col-sm-12 info">-->
-            <!--<span class="found">Be a Founding Member</span>-->
+        <!--<div class="col-xs-12 col-sm-12 info">-->
+        <!--<span class="found">Be a Founding Member</span>-->
 
-            <!--<p>Join <%= @signups.length %> Native Travellers</p>-->
-          <!--</div>-->
-          <!--<div class="col-xs-12 col-sm-8">-->
-            <!--<%= email_field_tag 'signup-email', nil, class: 'signup-email' %>-->
-          <!--</div>-->
-          <!--<div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>-->
+        <!--<p>Join <%= @signups.length %> Native Travellers</p>-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+        <!--<%= email_field_tag 'signup-email', nil, class: 'signup-email' %>-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>-->
         <!--</div>-->
       </div>
     </div>
@@ -337,8 +226,8 @@
     <div class="col-xs-10 col-sm-2">
       <div class="signup-submit">Sign Up</div>
     </div>
-    <div id="signup-close">
-      X
+    <div class="col-sm-1 col-sm-offset-2" id="signup-close">
+      <%= image_tag 'CloseOutX.svg' %>
     </div>
   </div>
 </section>

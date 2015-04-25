@@ -14,12 +14,11 @@ section {
 }
 
 .heading {
-  font-family : Futura Std, Futura, Trebuchet MS, Arial, sans-serif;
+  font-family : 'Futura Heavy', Trebuchet MS, Arial, sans-serif;
   font-size : 36px;
-  line-height : 70.93px;
+  line-height : 49.93px;
   letter-spacing : 0.54px;
-  color : #423535;
-  text-align: center;
+  color : #423535 ;
 }
 
 .body {
@@ -32,6 +31,17 @@ section {
   @media (max-width: $phone) {
     text-align: center;
   }
+}
+
+.menu-item {
+  font-family: 'Futura Book';
+  font-size : 16px;
+  letter-spacing : 1.36px;
+  color : #FFF;
+}
+
+.centered {
+  text-align: center;
 }
 
 .field_with_errors {
