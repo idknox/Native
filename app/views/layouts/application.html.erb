@@ -23,11 +23,56 @@
             <%= link_to 'SIGN UP', '#', class: 'link', id: 'nav-signup' %>
           </div>
         </div>
+        <%= link_to root_path do %>
         <%= image_tag 'NileLogoWhiteLP_1.svg' %>
-      </div>
+      <% end %>
+          </div>
     </div>
   </div>
 </nav>
 <%= yield %>
+<section class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 icons">
+        <div class="row">
+          <div class="col-xs-3 col-sm-3">
+            <%= link_to (image_tag 'Soc_Insta_Icon.svg'), '#' %>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <%= link_to (image_tag 'Soc_FacebookIcon.svg'), '#' %>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <%= link_to (image_tag 'Soc_Twitter_Icon.svg'), '#' %>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <%= link_to (image_tag 'Soc_Ello_Icon.svg'), 'https://ello.co/niletravel' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-sm-offset-5 links menu-item">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3"><%= link_to 'BLOG', 'https://ello.co/niletravel' %></div>
+          <div class="col-xs-6 col-sm-6 col-sm-offset-2"><%= link_to 'MANIFESTO', manifesto_path %></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 signup unstuck">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 info">
+            <span class="found">Be a Founding Member</span>
+
+            <p>Join <%= follower_count %> Native Travellers</p>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <%= email_field_tag 'signup-email', nil, class: 'signup-email' %>
+          </div>
+          <div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
