@@ -12,7 +12,7 @@
 
   .title {
     margin-top: 8%;
-    background: rgba(51, 51, 51, 0.3);
+//    background: rgba(51, 51, 51, 0.3);
     padding: 30px;
 
     @media (max-width: $phone) {
@@ -52,6 +52,7 @@
   width: 100%;
   height: 79vh;
   padding-top: 30px;
+  font-family: 'Futura Heavy';
 
   @media (max-width: $phone) {
     height: 50vh;
@@ -63,17 +64,20 @@
   }
 
   .text {
+    display: table;
 
     .who, .friends, .no-one {
       background: rgba(121, 182, 218, 0.9);
       color: #fff;
-      padding: 0 0 10px 20px;
+      padding: 10px 20px 10px 20px;
+      width: auto;
+      display: table-cell;
 
       h1 {
-        font-size: 3em;
+        font-size: 3.5em;
+        margin: 5px 0 5px 0;
 
         @media (max-width: $phone) {
-          margin: 0;
         }
       }
     }
@@ -322,18 +326,16 @@
 
   .signup-email {
     background: transparent;
-    height: 45px;
+    height: 40px;
     width: 100%;
     padding-left: 10px;
   }
 
   .signup-submit {
-    height: 45px;
-    font-size: 2em;
-    font-weight: 200;
+    height: 40px;
     border: none;
     color: $white;
-    padding: 0;
+    padding-top: 10px;
     border-radius: 150px;
     background: $red-orange;
     text-align: center;
@@ -341,8 +343,6 @@
   }
 
   .signup-confirm {
-    font-size: 2em;
-    font-weight: 200;
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -360,9 +360,6 @@
     }
   }
 
-  .signup-email, .signup-submit, .info {
-  }
-
   .found {
     font-size: 1.2em;
   }
@@ -378,9 +375,14 @@
   @media (max-width: $phone) {
     display: none;
   }
-  .row > div {
+  .row > div:nth-child(1) {
+    margin-right: -30px;
+  }
+
+  .row > div:nth-child(2) {
     margin-right: -15px;
   }
+
   .info {
     position: relative;
     top: 5px;
@@ -392,12 +394,12 @@
 
   .signup-email {
     position: relative;
-    top: 5px;
+    top: 8px;
   }
 
   .signup-submit {
     position: relative;
-    top: 5px;
+    top: 8px;
   }
 
   #signup-close {
