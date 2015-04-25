@@ -36,10 +36,6 @@ section {
 
 .centered {
   text-align: center;
-
-  @media (max-width: $phone) {
-    text-align: left;
-  }
 }
 
 .field_with_errors {

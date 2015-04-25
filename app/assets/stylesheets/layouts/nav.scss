@@ -12,13 +12,18 @@
 }
 
 .nav-custom {
-  height: 11vh;
+  height: 12vh;
   background: $red-orange;
   border-radius: 0;
   border: none;
   margin: 0;
   color: $white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+
+  @media (max-width: $phone) {
+    height: 10vh;
+  }
 
   .menu {
     margin-top: 10px;
@@ -27,8 +32,14 @@
     img {
       width: 75px;
       position: relative;
-      top: 12px;
+      top: 14px;
       filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+
+
+      @media (max-width: $phone) {
+        width: 50px;
+        top: 12px;
+      }
     }
 
     .slide-in {
