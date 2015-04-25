@@ -1,5 +1,3 @@
-@import "variables";
-
 // -- HERO --
 
 .top {
@@ -279,48 +277,17 @@
   }
 }
 
-// -- FOOTER --
-
-.footer {
-  height: 90vh;
-  background: #333 image-url('FooterImg_2x_Retina.jpg');
-  background-size: cover;
-  color: #fff;
-  padding: 50px;
-
-  @media (max-width: $phone) {
-    padding: 40px 20px 20px 20px;
-  }
-
-  .icons {
-
-    img {
-      width: 100%;
-    }
-  }
-  .links {
-
-    div {
-      text-align: right;
-
-      @media (max-width: $phone) {
-        text-align: center;
-        margin-top: 50px;
-      }
-
-    }
-  }
-}
-
 // -- SIGNUP --
 
 .signup {
   color: $white;
+  font-family: 'Futura Book';
 
   .signup-email {
     background: transparent;
     height: 45px;
     width: 100%;
+    padding-left: 10px;
   }
 
   .signup-submit {
@@ -350,7 +317,6 @@
   }
 
   .signup-email, .signup-submit, .info {
-//    display: none;
   }
 
   .found {
