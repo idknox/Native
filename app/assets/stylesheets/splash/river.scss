@@ -1,0 +1,62 @@
+.river {
+  background: #333 image-url('SecondImg_2x_Retina.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 79vh;
+  padding-top: 30px;
+
+  @media (max-width: $phone) {
+    height: 34vh;
+    padding-top: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    display: table;
+
+    .who, .friends, .no-one {
+      background: rgba(121, 182, 218, 0.9);
+      padding: 10px 20px 10px 20px;
+      width: auto;
+      display: table-cell;
+
+      h1 {
+        margin: 5px 0 5px 0;
+        color: #fff;
+      }
+    }
+
+    @media (max-width: $phone) {
+      .who {
+
+        h1 {
+          margin-top: -5px;
+          margin-bottom: -22px;
+        }
+      }
+
+      .friends {
+
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+      .no-one {
+
+        h1 {
+          margin-bottom: -5px;
+          margin-top: -20px;
+        }
+      }
+    }
+
+    .no-one {
+      margin-left: 0;
+    }
+  }
+}

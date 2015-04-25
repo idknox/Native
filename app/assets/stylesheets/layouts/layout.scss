@@ -1,7 +1,8 @@
 
-a {
+a, a:visited {
   color: inherit;
-
+  text-decoration: none;
+  
   &:hover {
     text-decoration: none;
     color: $link-hover;
@@ -13,11 +14,11 @@ section {
 }
 
 .heading {
-  font-family : 'Futura Heavy', Trebuchet MS, Arial, sans-serif;
-  font-size : 36px;
-  line-height : 49.93px;
-  letter-spacing : 0.54px;
-  color : #423535 ;
+  font-family: 'Futura Heavy', Trebuchet MS, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 49.93px;
+  letter-spacing: 0.54px;
+  color: #423535;
 }
 
 .body {
@@ -29,9 +30,9 @@ section {
 
 .menu-item {
   font-family: 'Futura Book';
-  font-size : 16px;
-  letter-spacing : 1.36px;
-  color : #FFF;
+  font-size: 16px;
+  letter-spacing: 1.36px;
+  color: #FFF;
 }
 
 .centered {
