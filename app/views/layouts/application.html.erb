@@ -24,9 +24,9 @@
           </div>
         </div>
         <%= link_to root_path do %>
-        <%= image_tag 'NileLogoWhiteLP_1.svg', id: 'nav-logo' %>
-      <% end %>
-          </div>
+          <%= image_tag 'NileLogoWhiteLP_1.svg', id: 'nav-logo' %>
+        <% end %>
+      </div>
     </div>
   </div>
 </nav>
@@ -58,17 +58,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 signup unstuck">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 signup unstuck">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 info">
+          <div class="col-sm-12 info">
             <span class="found">Be a Founding Member</span>
 
             <p>Join <%= follower_count %> Native Travellers</p>
           </div>
-          <div class="col-xs-12 col-sm-8">
+          <div class="col-sm-8">
             <%= email_field_tag 'signup-email', nil, class: 'signup-email' %>
           </div>
-          <div class="col-xs-12 col-sm-4 signup-submit">Sign Up</div>
+          <div class="col-sm-4">
+            <div class="signup-submit">Sign Up</div>
+          </div>
         </div>
       </div>
     </div>

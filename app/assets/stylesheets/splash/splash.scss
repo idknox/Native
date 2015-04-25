@@ -26,6 +26,10 @@
 .intro {
   padding: 30px 20px 50px 20px;
 
+  @media (max-width: $phone) {
+    padding: 30px;
+  }
+
   img {
     width: 100%;
 
@@ -109,25 +113,6 @@
   background: #0E0505;
   padding: 40px 0 40px 0;
   color: #fff;
-
-  .bios {
-
-    h1, h2 {
-      margin: 0;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #fff;
-      font-family: 'Futura Heavy';
-    }
-
-    .info {
-      padding: 0;
-      color: #fff;
-      list-style: none;
-    }
-  }
 
   .images {
     margin-top: 30px;
@@ -276,9 +261,42 @@
     }
   }
 
+  .bios {
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #fff;
+      font-family: 'Futura Heavy';
+    }
+
+    .bio {
+      display: none;
+
+      @media (max-width: $phone) {
+        padding: 30px;
+      }
+
+      .info {
+        padding: 0;
+        color: #fff;
+        list-style: none;
+      }
+    }
+  }
+
   .vision {
     text-align: center;
     margin-top: 40px;
+
+    p {
+      @media (max-width: $phone) {
+        padding: 30px;
+      }
+    }
 
     img {
       width: 100px;
@@ -292,6 +310,10 @@
   h1, p {
     color: #F2F4F1;
     width: 100%;
+  }
+
+  p {
+    text-align: left;
   }
 }
 

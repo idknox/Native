@@ -25,11 +25,6 @@ section {
   font-size: 20px;
   line-height: 43.83px;
   color: #716867;
-  text-align: left;
-
-  @media (max-width: $phone) {
-    text-align: center;
-  }
 }
 
 .menu-item {

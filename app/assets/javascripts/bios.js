@@ -1,6 +1,5 @@
 $(document).ready(function () {
-//  $('.bio').hide();
-//  $('#nile').show();
+  $('#nile').show();
 
   $('.profile-image').on('mouseenter', function () {
     var name = $(this).data('name');
