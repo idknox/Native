@@ -11,6 +11,18 @@
   }
 }
 
+@keyframes spin {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes backspin {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .nav-custom {
   height: 12vh;
   background: $red-orange;
@@ -35,11 +47,21 @@
       top: 2vh;
       filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 
+      &:hover {
+        animation: spin .5s;
+      }
 
       @media (max-width: $phone) {
         width: 50px;
         top: 12px;
       }
+    }
+
+    .rotated {
+      transform: rotate(45deg);
+    }
+    .unrotate {
+      animation: backspin .5s;
     }
 
     .slide-in {

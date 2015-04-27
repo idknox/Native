@@ -7,7 +7,7 @@
   padding-top: 30px;
 
   @media (max-width: $phone) {
-    height: 34vh;
+    height: 42vh;
     padding-top: 10px;
   }
 
@@ -18,6 +18,11 @@
 
   .text {
     display: table;
+
+    @media (max-width: $phone) {
+      padding-left: 40px;
+      width: 93%;
+    }
 
     .who, .friends, .no-one {
       background: rgba(121, 182, 218, 0.9);
@@ -32,6 +37,7 @@
     }
 
     @media (max-width: $phone) {
+
       .who {
 
         h1 {

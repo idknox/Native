@@ -7,6 +7,9 @@
     padding: 30px;
   }
 
+  .who {
+    margin-bottom: 20px;
+  }
   .images {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -171,13 +174,16 @@
     }
 
     .bio {
-      display: none;
 
       .info {
         padding: 0;
         color: #fff;
         list-style: none;
       }
+    }
+
+    #derek, #ian, #tristram {
+      display: none;
     }
   }
 
