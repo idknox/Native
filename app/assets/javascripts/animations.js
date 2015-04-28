@@ -26,10 +26,8 @@ $(document).ready(function () {
   $('.social-icon').on('mouseenter', function () {
     var icon = $(this);
     icon.removeClass('shrink').addClass('grow');
-    setTimeout(function () {
-      icon.addClass('grown')
-    }, 1000)
+    icon.addClass('grown')
   }).on('mouseleave', function () {
-    $(this).removeClass('grow').addClass('shrink').removeClass('grown');
+    $(this).removeClass('grow grown').addClass('shrink');
   });
 });

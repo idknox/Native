@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   if (localStorage.getItem('signedUp') === 'true') {
-//    $('.stuck').hide();
+    $('.stuck').hide();
   }
 
   $('#signup-close').on('click', function () {

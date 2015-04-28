@@ -8,6 +8,16 @@
   }
 }
 
+@keyframes shrink {
+  0% {
+    transform: scale(1.2)
+  }
+
+  100% {
+    transform: scale(1.0)
+  }
+}
+
 .footer {
   height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
@@ -30,12 +40,11 @@
     }
 
     .grow {
-      animation: grow 1s;
+      animation: grow .5s;
     }
 
     .shrink {
-      animation: grow 1s;
-      animation-direction: reverse;
+      animation: shrink .5s;
     }
 
     .grown {
