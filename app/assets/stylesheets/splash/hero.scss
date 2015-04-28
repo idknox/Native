@@ -5,7 +5,7 @@
   color: $white;
 
   @media (max-width: $phone) {
-    height: 40vh;
+    height: 50vh;
   }
 
   .title {
@@ -13,7 +13,7 @@
     padding: 30px;
 
     @media (max-width: $phone) {
-      margin-top: 25%;
+      margin-top: 30%;
     }
 
     img {
