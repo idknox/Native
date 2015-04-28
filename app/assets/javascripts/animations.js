@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   $('#nav-logo').on('mouseenter', function () {
     var icon = $(this);
-    icon.removeClass('unrotate').addClass('rotate')
+    icon.removeClass('unrotate').addClass('rotate');
     setTimeout(function () {
       icon.addClass('rotated')
     }, 500)
