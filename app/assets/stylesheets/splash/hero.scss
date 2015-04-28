@@ -1,7 +1,7 @@
 .hero {
   background: #e3e3e3 image-url('HeroImage_2x_Retina.jpg');
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   color: $white;
 
   @media (max-width: $phone) {
@@ -9,12 +9,16 @@
   }
 
   .title {
-    margin-top: 8%;
-    //    background: rgba(51, 51, 51, 0.3);
+    margin-top: 12%;
     padding: 30px;
 
     @media (max-width: $phone) {
       margin-top: 12%;
+    }
+
+    img {
+      filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+      opacity: 0.93;
     }
   }
 }

@@ -1,3 +1,13 @@
+@keyframes grow {
+  0% {
+    transform: scale(1.0)
+  }
+
+  100% {
+    transform: scale(1.2)
+  }
+}
+
 .footer {
   height: 90vh;
   background: #333 image-url('FooterImg_2x_Retina.jpg');
@@ -11,18 +21,36 @@
 
   .icons {
 
-    img {
-      width: 100%;
+    .social-icon {
+
+      img {
+        width: 100%;
+      }
+
     }
-  }
-  .links {
 
-    div {
-      text-align: right;
+    .grow {
+      animation: grow 1s;
+    }
 
-      @media (max-width: $phone) {
-        margin-top: 50px;
-        text-align: center;
+    .shrink {
+      animation: grow 1s;
+      animation-direction: reverse;
+    }
+
+    .grown {
+      transform: scale(1.2);
+    }
+
+    .links {
+
+      div {
+        text-align: right;
+
+        @media (max-width: $phone) {
+          margin-top: 50px;
+          text-align: center;
+        }
       }
     }
   }

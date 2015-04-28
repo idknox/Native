@@ -19,6 +19,7 @@
     }
 
     .profile-image {
+      cursor: pointer;
       @media (max-width: $phone) {
         margin-bottom: 20px;
       }

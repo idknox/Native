@@ -1,3 +1,13 @@
+@keyframes appear {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1.0)
+  }
+}
+
 @keyframes iconSlideIn {
   0% {
     transform: translate3d(0, -100%, 0);
@@ -12,6 +22,10 @@
 }
 
 @keyframes spin {
+ 0% {
+   transform: rotate(0deg);
+ }
+
   100% {
     transform: rotate(45deg);
   }
@@ -32,6 +46,8 @@
   color: $white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
   z-index: 9999;
+  position: absolute;
+  width: 100%;
 
   @media (max-width: $phone) {
     height: 10vh;
@@ -45,10 +61,9 @@
       width: 75px;
       position: relative;
       top: 2vh;
-      filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+      display: none;
 
       &:hover {
-        animation: spin .5s;
       }
 
       @media (max-width: $phone) {
@@ -57,15 +72,25 @@
       }
     }
 
+    .appear {
+      animation: appear 2s;
+    }
+
+    .rotate {
+      animation: spin .5s;
+    }
+
     .rotated {
       transform: rotate(45deg);
     }
+
     .unrotate {
       animation: backspin .5s;
     }
 
-    .slide-in {
-      animation: iconSlideIn 2s;
-    }
   }
+}
+
+.slide-in {
+  animation: iconSlideIn 2s;
 }

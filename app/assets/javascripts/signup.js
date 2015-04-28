@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
   if (localStorage.getItem('signedUp') === 'true') {
-//    $('.signup').hide();
-//    $('.invite').show();
+//    $('.stuck').hide();
   }
 
   $('#signup-close').on('click', function () {
@@ -35,36 +34,10 @@ $(document).ready(function () {
 
 
   function animateSignup() {
-
-//    $('.stuck').css({
-//      position: 'absolute',
-//      top: $(window).scrollTop() + $(window).height() - $('.stuck').height()
-//    });
-
     $('.stuck').animate({
       opacity: 0
     }, 2000, function () {
-//      $('.stuck').hide();
-//      $('.unstuck').find('.signup-email, .signup-submit, .info').show();
     });
-
-//    $('.stuck').find('.signup-email').animate({
-//      width: 350
-//    }, 2000);
-//
-//    $('.stuck').find('.signup-submit').animate({
-//      left: 53
-//    }, 2000);
-//
-//    $('.stuck').find('.info').animate({
-//      position: 'absolute',
-//      top: -49,
-//      left: 202
-//    }, 2000);
-//
-//    $('.stuck').find('#signup-close').animate({
-//      opacity: 0
-//    }, 2000);
   }
 
   $(window).on('scroll', function () {
