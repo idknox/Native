@@ -12,14 +12,16 @@ $(document).ready(function () {
 
 
   $('#nav-logo').on('mouseenter', function () {
-    $(this).removeClass('unrotate').addClass('rotate')
+    var icon = $(this);
+    icon.removeClass('unrotate').addClass('rotate')
     setTimeout(function () {
-      $('#nav-logo').addClass('rotated')
+      icon.addClass('rotated')
     }, 500)
   }).on('mouseleave', function () {
-    $(this).removeClass('rotate').addClass('unrotate');
+    var icon = $(this);
+    icon.removeClass('rotate').addClass('unrotate');
     setTimeout(function () {
-      $('#nav-logo').removeClass('rotated')
+      icon.removeClass('rotated')
     }, 500)
   });
 

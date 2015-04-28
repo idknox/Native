@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   function confirmSignup() {
     $('.signup').find('.row').empty().append(
-      '<span class="col-sm-6 col-sm-offset-3 signup-confirm">Thanks for signing up!</span>'
+      '<span class="col-sm-6 col-sm-offset-3 signup-confirm heading">Thanks for signing up!</span>'
     );
     setTimeout(function () {
       $('.signup').slideUp()

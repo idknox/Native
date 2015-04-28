@@ -50,16 +50,16 @@
     .grown {
       transform: scale(1.2);
     }
+  }
 
-    .links {
+  .links {
 
-      div {
-        text-align: right;
+    div {
+      text-align: right;
 
-        @media (max-width: $phone) {
-          margin-top: 50px;
-          text-align: center;
-        }
+      @media (max-width: $phone) {
+        margin-top: 50px;
+        text-align: center;
       }
     }
   }
