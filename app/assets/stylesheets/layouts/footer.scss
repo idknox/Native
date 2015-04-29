@@ -29,6 +29,10 @@
     padding: 40px 20px 20px 20px;
   }
 
+  @media (min-width: $phone) and (max-width: $tablet) {
+    height: 50vh;
+  }
+
   .icons {
 
     .social-icon {
@@ -36,7 +40,6 @@
       img {
         width: 100%;
       }
-
     }
 
     .grow {
@@ -60,6 +63,10 @@
       @media (max-width: $phone) {
         margin-top: 50px;
         text-align: center;
+      }
+
+      @media (min-width: $phone) and (max-width: $tablet) {
+        margin-top: 5px;
       }
     }
   }

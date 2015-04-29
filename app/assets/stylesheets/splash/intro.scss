@@ -11,8 +11,17 @@
     @media (max-width: $phone) {
       display: none;
     }
+
+    @media (min-width: $phone) and (max-width: $tablet) {
+      margin-top: 30%;
+    }
   }
 
+  .phone {
+    @media (min-width: $phone) and (max-width: $tablet) {
+      margin-top: 5%;
+    }
+  }
   .intro-container {
     margin-top: 30px;
   }

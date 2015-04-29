@@ -4,7 +4,7 @@
   height: 100vh;
   color: $white;
 
-  @media (max-width: $phone) {
+  @media (max-width: $tablet) {
     height: 50vh;
   }
 
@@ -12,8 +12,12 @@
     margin-top: 12%;
     padding: 30px;
 
-    @media (max-width: $phone) {
+    @media (max-width: $tablet) {
       margin-top: 30%;
+    }
+
+    @media (min-width: $phone) and (max-width: $tablet) {
+      margin-top: 22%;
     }
 
     img {

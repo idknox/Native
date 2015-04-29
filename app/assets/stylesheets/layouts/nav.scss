@@ -53,6 +53,10 @@
     height: 10vh;
   }
 
+  @media (min-width: $phone) and (max-width: $tablet) {
+    height: 8vh;
+  }
+
   .menu {
     margin-top: 10px;
     text-align: center;
@@ -69,6 +73,10 @@
       @media (max-width: $phone) {
         width: 50px;
         top: 12px;
+      }
+
+      @media (min-width: $phone) and (max-width: $tablet) {
+        top: 10px;
       }
     }
 

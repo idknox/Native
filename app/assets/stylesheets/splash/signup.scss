@@ -57,15 +57,8 @@
   z-index: 9999;
   width: 100%;
 
-  @media (max-width: $phone) {
+  @media (max-width: $tablet) {
     display: none;
-  }
-  .row > div:nth-child(1) {
-//    margin-right: -30px;
-  }
-
-  .row > div:nth-child(2) {
-//    margin-right: -15px;
   }
 
   .info {

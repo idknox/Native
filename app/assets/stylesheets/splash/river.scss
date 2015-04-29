@@ -11,6 +11,10 @@
     padding-top: 50px;
   }
 
+  @media (min-width: $phone) and (max-width: $tablet) {
+    height: 40vh;
+  }
+
   img {
     width: 100%;
     height: 100%;
