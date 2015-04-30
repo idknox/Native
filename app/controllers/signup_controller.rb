@@ -1,6 +1,6 @@
 class SignupController < ApplicationController
   def create
-    signup = Signup.new(email: params[:email])
+    signup = Signup.new(signup_params)
 
     if signup.save
       mailchimp_subscribe(signup)
@@ -12,6 +12,10 @@ class SignupController < ApplicationController
   end
 
   private
+
+  def signup_params
+    params.require(:signup).permit(:email)
+  end
 
   def mailchimp_subscribe(user)
     mc = MailChimp.new

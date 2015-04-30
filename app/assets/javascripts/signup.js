@@ -29,7 +29,7 @@ $(document).ready(function () {
 
   $('.signup-submit').on('click', function () {
     var email = $(this).parents('.signup').find('.signup-email').val();
-    $.post('/signup', {email: email}, handleResponse)
+    $.post('/signup', {signup: {email: email}}, handleResponse)
   });
 
 
