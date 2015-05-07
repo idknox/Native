@@ -1,212 +1,200 @@
 .team {
   background: #0E0505;
-  padding: 40px 0 40px 0;
+  padding: 15% 0 5% 0;
   color: #fff;
 
   @media (max-width: $phone) {
     padding: 30px;
   }
 
+  h1, p {
+    color: #F2F4F1;
+    width: 100%;
+  }
+
   .who {
     margin-bottom: 20px;
   }
-  .images {
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+  .bios {
+    margin-top: 5%;
 
     @media (max-width: $phone) {
       padding-left: 0;
     }
 
-    .profile-image {
-      cursor: pointer;
+    .member {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      clear: both;
 
-      @media (max-width: $phone) {
+      .profile-image {
+
+        @media (max-width: $phone) {
+          margin-bottom: 20px;
+        }
+
+        @media (min-width: $phone) and (max-width: $tablet) {
+          margin-bottom: 40px;
+        }
+
+        .hexagon {
+          position: relative;
+          width: 200px;
+          height: 115.47px;
+          margin: 57.74px 0;
+          background-size: auto 219.3931px;
+          background-position: center;
+
+          @media (min-width: $phone) and (max-width: $tablet) {
+            margin-left: 30px;
+          }
+        }
+
+        .hexTop,
+        .hexBottom {
+          position: absolute;
+          z-index: 1;
+          width: 141.42px;
+          height: 141.42px;
+          overflow: hidden;
+          -webkit-transform: scaleY(0.5774) rotate(-45deg);
+          -ms-transform: scaleY(0.5774) rotate(-45deg);
+          transform: scaleY(0.5774) rotate(-45deg);
+          background: inherit;
+          left: 24.29px;
+        }
+
+        /*counter transform the bg image on the caps*/
+        .hexTop:after,
+        .hexBottom:after {
+          content: "";
+          position: absolute;
+          width: 190.0000px;
+          height: 109.69655114602891px;
+          -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+          -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+          transform: rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+          -webkit-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+          background: inherit;
+        }
+
+        .hexTop {
+          top: -70.7107px;
+          border-top: 7.0711px #333333;
+          border-right: solid 7.0711px #333333;
+        }
+
+        .hexTop:after {
+          background-position: center top;
+        }
+
+        .hexBottom {
+          bottom: -70.7107px;
+          border-bottom: solid 7.0711px #333333;
+          border-left: solid 7.0711px #333333;
+        }
+
+        .hexBottom:after {
+          background-position: center bottom;
+        }
+
+        .hexagon:after {
+          content: "";
+          position: absolute;
+          top: 2.8868px;
+          left: 0;
+          width: 190.0000px;
+          height: 109.6966px;
+          z-index: 2;
+          background: inherit;
+        }
+
+        .red {
+          border-left: solid 5px $border-red;
+          border-right: solid 5px $border-red;
+
+          &:nth-child(2) {
+          }
+
+          .hexTop {
+            border-top: solid 7.0711px $border-red;
+            border-right: solid 7.0711px $border-red;
+          }
+
+          .hexBottom {
+            border-bottom: solid 7.0711px $border-red;
+            border-left: solid 7.0711px $border-red;
+          }
+        }
+
+        .blue {
+          border-left: solid 5px $border-blue;
+          border-right: solid 5px $border-blue;
+
+          .hexTop {
+            border-top: solid 7.0711px $border-blue;
+            border-right: solid 7.0711px $border-blue;
+          }
+
+          .hexBottom {
+            border-bottom: solid 7.0711px $border-blue;
+            border-left: solid 7.0711px $border-blue;
+          }
+        }
+
+        .brown {
+          border-left: solid 5px $border-brown;
+          border-right: solid 5px $border-brown;
+
+          .hexTop {
+            border-top: solid 7.0711px $border-brown;
+            border-right: solid 7.0711px $border-brown;
+          }
+
+          .hexBottom {
+            border-bottom: solid 7.0711px $border-brown;
+            border-left: solid 7.0711px $border-brown;
+          }
+        }
+      }
+
+      h1, h2 {
+        margin: 0;
+        color: #fff;
+        font-family: 'Futura Heavy';
+      }
+
+      h2 {
         margin-bottom: 20px;
       }
 
-      @media (min-width: $phone) and (max-width: $tablet) {
-        margin-bottom: 40px;
-      }
+      .bio {
+        margin-top: 10px;
 
-      .hexagon {
-        position: relative;
-        width: 150px;
-        height: 86.60px;
-        margin: 43.30px 0;
-        background-size: auto 166.2769px;
-        background-position: center;
+        .info {
+          padding: 0;
+          list-style: none;
+          font-family: 'Fjord', Georgia, 'Times New Roman', serif;
+          font-size: 18px;
 
-        @media (min-width: $phone) and (max-width: $tablet) {
-          margin-left: 30px;
-        }
-      }
-
-      .hexTop,
-      .hexBottom {
-        position: absolute;
-        z-index: 1;
-        width: 106.07px;
-        height: 106.07px;
-        overflow: hidden;
-        -webkit-transform: scaleY(0.5774) rotate(-45deg);
-        -ms-transform: scaleY(0.5774) rotate(-45deg);
-        transform: scaleY(0.5774) rotate(-45deg);
-        background: inherit;
-        left: 18.97px;
-      }
-
-      /*counter transform the bg image on the caps*/
-      .hexTop:after,
-      .hexBottom:after {
-        content: "";
-        position: absolute;
-        width: 144.0000px;
-        height: 83.13843876330613px;
-        -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
-        -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
-        transform: rotate(45deg) scaleY(1.7321) translateY(-41.5692px);
-        -webkit-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-        transform-origin: 0 0;
-        background: inherit;
-      }
-
-      .hexTop {
-        top: -53.0330px;
-        border-top: solid 4.2426px #333333;
-        border-right: solid 4.2426px #333333;
-      }
-
-      .hexTop:after {
-        background-position: center top;
-      }
-
-      .hexBottom {
-        bottom: -53.0330px;
-        border-bottom: solid 4.2426px #333333;
-        border-left: solid 4.2426px #333333;
-      }
-
-      .hexBottom:after {
-        background-position: center bottom;
-      }
-
-      .hexagon:after {
-        content: "";
-        position: absolute;
-        top: 1.7321px;
-        left: 0;
-        width: 144.0000px;
-        height: 83.1384px;
-        z-index: 2;
-        background: inherit;
-      }
-
-      .red {
-        border-left: solid 3px $border-red;
-        border-right: solid 3px $border-red;
-
-        &:nth-child(2) {
-        }
-
-        .hexTop {
-          border-top: solid 4.2426px $border-red;
-          border-right: solid 4.2426px $border-red;
-        }
-
-        .hexBottom {
-          border-bottom: solid 4.2426px $border-red;
-          border-left: solid 4.2426px $border-red;
-        }
-      }
-
-      .blue {
-        border-left: solid 3px $border-blue;
-        border-right: solid 3px $border-blue;
-
-        .hexTop {
-          border-top: solid 4.2426px $border-blue;
-          border-right: solid 4.2426px $border-blue;
-        }
-
-        .hexBottom {
-          border-bottom: solid 4.2426px $border-blue;
-          border-left: solid 4.2426px $border-blue;
-        }
-      }
-
-      .brown {
-        border-left: solid 3px $border-brown;
-        border-right: solid 3px $border-brown;
-
-        .hexTop {
-          border-top: solid 4.2426px $border-brown;
-          border-right: solid 4.2426px $border-brown;
-        }
-
-        .hexBottom {
-          border-bottom: solid 4.2426px $border-brown;
-          border-left: solid 4.2426px $border-brown;
-        }
-      }
-    }
-
-    .active {
-
-      .hexagon {
-        border-left: solid 3px #fff;
-        border-right: solid 3px #fff;
-
-        .hexTop {
-          border-top: solid 4.2426px #fff;
-          border-right: solid 4.2426px #fff;
-        }
-
-        .hexBottom {
-          border-bottom: solid 4.2426px #fff;
-          border-left: solid 4.2426px #fff;
+          .bolded {
+            font-weight: bold;
+          }
         }
       }
     }
   }
+}
 
-  .bios {
-
-    h1, h2 {
-      margin: 0;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #fff;
-      font-family: 'Futura Heavy';
-    }
-
-    .bio {
-
-      .info {
-        padding: 0;
-        color: #fff;
-        list-style: none;
-
-        .bolded {
-          font-weight: bold;
-        }
-      }
-    }
-
-    #derek, #ian, #tristram {
-      display: none;
-    }
-  }
+.splash-vision {
+  background: #0E0505;
+  padding: 40px 0 40px 0;
+  color: #fff;
 
   .vision {
-    margin-top: 40px;
-
-    p {
-
-    }
 
     img {
       width: 100px;

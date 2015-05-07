@@ -70,4 +70,27 @@
       }
     }
   }
+
+  .unstuck {
+    margin-top: 150px;
+
+    @media (max-width: $phone) {
+      margin-top: 70px;
+      text-align: center;
+
+      .signup-email {
+        margin: 10px 0 10px 0;
+      }
+    }
+
+    .found {
+      font-size: 1.2em;
+    }
+  }
+
+  .copyright {
+    margin-top: 180px;
+    text-align: right;
+    font-size: 12px;
+  }
 }

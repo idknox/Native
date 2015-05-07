@@ -2,6 +2,9 @@ class SplashController < ApplicationController
   def show
   end
 
-  def manifesto
+  def vision
+  end
+
+  def team
   end
 end
