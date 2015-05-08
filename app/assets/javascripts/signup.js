@@ -41,7 +41,7 @@ $(document).ready(function () {
   }
 
   $(window).on('scroll', function () {
-    var trigger = $('.team').offset().top;
+    var trigger = $('.river').offset().top;
 
     if ($(window).scrollTop() > trigger && $(window).width() > 378) {
       animateSignup();
