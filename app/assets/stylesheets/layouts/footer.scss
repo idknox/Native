@@ -92,5 +92,10 @@
     margin-top: 180px;
     text-align: right;
     font-size: 12px;
+
+    @media (max-width: $phone) {
+      margin-top: 50px;
+      text-align: left;
+    }
   }
 }

@@ -8,6 +8,10 @@
     @media (max-width: $phone) {
       margin: auto;
     }
+
+    .email-link {
+      display: block;
+    }
   }
   .image {
     background: #333;
